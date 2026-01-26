@@ -1,0 +1,44 @@
+# .gitignore for Attendance_System
+# Ignore big files and folders
+
+# Ignore numpy face encodings and images
+Demo/known_faces/*.npy
+Demo/known_faces/*/*.jpg
+Demo/known_faces/*/*.jpeg
+Demo/known_faces/*/*.png
+
+# Ignore model weights
+Demo/weights/
+
+# Ignore outputs
+Demo/outputs/
+
+# Ignore database and log files
+Demo/attendance.db
+Demo/BankAi.log
+
+# Ignore Python cache
+__pycache__/
+Demo/**/__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore other large files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar.gz
+*.tar
+*.7z
+*.rar
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environments
+venv/
+.env/
