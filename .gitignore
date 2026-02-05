@@ -1,14 +1,27 @@
 # .gitignore for Attendance_System
 # Ignore big files and folders
 
+# Global patterns
+**/node_modules/
+**/target/
+**/uploads/
+**/weights/
+**/dist/
+**/__pycache__/
+**/.env
+**/.vscode/
+**/.idea/
+
 # Ignore numpy face encodings and images
 Demo/known_faces/*.npy
 Demo/known_faces/*/*.jpg
 Demo/known_faces/*/*.jpeg
 Demo/known_faces/*/*.png
+Full_Project/AI_Portion/known_faces/*.npy
 
 # Ignore model weights
 Demo/weights/
+Full_Project/AI_Portion/weights/
 
 # Ignore outputs
 Demo/outputs/
@@ -16,15 +29,10 @@ Demo/outputs/
 # Ignore database and log files
 Demo/attendance.db
 Demo/BankAi.log
+Full_Project/AI_Portion/attendance.db
+Full_Project/AI_Portion/BankAi.log
 
-# Ignore Python cache
-__pycache__/
-Demo/**/__pycache__/
-
-# Ignore compiled Python files
-*.pyc
-
-# Ignore other large files
+# Ignore large binary files
 *.mp4
 *.avi
 *.mov
@@ -34,6 +42,10 @@ Demo/**/__pycache__/
 *.tar
 *.7z
 *.rar
+*.onnx
+*.pb
+*.h5
+*.tflite
 
 # Ignore system files
 .DS_Store
