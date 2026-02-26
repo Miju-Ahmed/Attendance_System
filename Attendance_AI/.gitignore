@@ -1,0 +1,57 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build results
+bin/
+obj/
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Packages
+node_modules/
+.npm/
+jspm_packages/
+package-lock.json
+
+# Local config & Database
+appsettings.Development.json
+*.db
+*.db-shm
+*.db-wal
+*.db.bak
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+.venv/
+venv/
+env/
+
+# Large binaries/Weights
+weights/
+*.onnx
+*.weights
+*.h5
+*.pb
+
+# Uploads
+wwwroot/uploads/
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.suo
+*.sln.docstates
